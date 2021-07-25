@@ -3,7 +3,7 @@ body
 				margin:0;
 				padding:0;
 				height: 900px;
-				background-image: linear-gradient(to bottom, #ccffff 0%, #ff99cc);
+				background-color: #F0F0F0;
 				font-family: sans-serif;
 			}
 
@@ -18,12 +18,13 @@ h3 {
   overflow: hidden;
   background-color:#E0E0E0; 
   padding: 10px 10px;
+  font-weight: bold;
 }
 
 .header a {
   margin: 0 5px;	
   float: left;
-  color: #ff9999;
+  color: #ff00aa;
   text-align: center;
   padding: 10px;
   text-decoration: none;
@@ -43,15 +44,15 @@ h3 {
 }
 
 .header a.active {
-  background-color:#ccffff;
-  color: black;
+  background-color:#0000b3;
+  color: white;
 }
 
 .header-right {
   float: right;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 750px) {
   .header a {
     float: none;
     display: block;
@@ -61,9 +62,24 @@ h3 {
   .header-right {
     float: none;
   }
+  .form{
+    width: 500px;
+    height:800px;
+    background: floralwhite;
+    color: #4169E1;
+    top:80%;
+    left:50%; 
+    position:absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.7);
+    background: transparent;
+    transform: translate(-50%,-120%);
+  }
 }
 .form{
-    width: 320px;
+    width: 350px;
     height:720px;
     background: floralwhite;
     color: #4169E1;
@@ -75,6 +91,7 @@ h3 {
     padding: 70px 30px;
     box-shadow: 0 15px 25px rgba(0,0,0,0.7);
     background: transparent;
+    
   }
   .avatar{
     width: 100px;
@@ -106,7 +123,7 @@ h3 {
     background: transparent;
     outline: none;
     height: 40px;
-    color: #fff;
+    color: black;
     font-size: 16px;
 
   }
@@ -129,7 +146,7 @@ h3 {
     border-bottom: 1px solid slateblue;
     height: 40px;
     font-size: 16px;
-    color: #fff;
+    color: black;
   }
     .form input[type="tel"]
   {
@@ -139,7 +156,7 @@ h3 {
     border-bottom: 1px solid slateblue;
     height: 40px;
     font-size: 16px;
-    color: #fff;
+    color: black;
   }
   .form input[type="submit"]:hover
   {
@@ -156,9 +173,7 @@ h3 {
   .form a:hover{
     color: midnightblue;
   }
-  .form p:hover{
-    color: mistyrose;
-  }
+
  .bi{
   float: right;
   transform: translate(0,-210%);
