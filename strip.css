@@ -1,7 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Lily+Script+One';
 @import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
 @import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
-
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -10,7 +9,7 @@ body {
   .topnav {
     position: relative;
     overflow: hidden;
-    background-color: #00bfff;
+    background-color: #74b7d1;
     /*#00008B;*/
     /* rgb(13, 13, 146); */
   }
@@ -33,9 +32,9 @@ body {
     float: none;
     position: absolute;
     top: 80%;
-    left: 50%;
-    right: auto;
-    transform: translate(-50%, -50%);
+    left: 17%;
+    right: 0%;
+    transform: translate(-10%, -50%);
   }
   
   .topnav-right {
@@ -43,7 +42,7 @@ body {
   }
   
   /* Responsive navigation menu (for mobile devices) */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 300px) {
     .topnav a, .topnav-right {
       float: none;
       display: block;
@@ -56,3 +55,88 @@ body {
       transform: none;
     }
   }
+  
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+section{
+    width: 100%;
+    height: auto;
+    background-color: #212646;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.accordion-item{
+    background-color: #283042;
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: .5rem 2px .5rem rgba(0,0,0,.1);
+}
+
+.accordion-link{
+    font-size: 1.6rem;
+    color: rgba(255,255,255,.8);
+    text-decoration: none;
+    background-color: #283042;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.accordion-link i{
+    color: #e7d5ff;
+    padding: .5rem;
+}
+
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: #212838;
+    transition: max-height 650ms;
+}
+
+.answer::before{
+    content: "";
+    position: absolute;
+    width: 6rem;
+    height: 90%;
+    /* background-color: #8fc460; */
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);    
+}
+
+.answer p{
+    color: rgba(255,255,255,.6);
+    font-size: 1.4rem;
+    padding: 2rem;
+}
+
+.accordion-item:target .answer{
+    max-height: 20rem;
+}
