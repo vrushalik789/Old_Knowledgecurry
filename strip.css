@@ -32,9 +32,9 @@ body {
     float: none;
     position: absolute;
     top: 80%;
-    left: 17%;
+    left: 33%;
     right: 0%;
-    transform: translate(-10%, -50%);
+    transform: translate(-20%, -50%);
   }
   
   .topnav-right {
