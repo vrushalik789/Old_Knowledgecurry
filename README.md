@@ -1,2 +1,2 @@
 # Knowledgecurry
-https://vrushalik789.github.io/Old_Knowledgecurry/
+https://vrushalik789.github.io/Old_Knowledgecurry/main.html
